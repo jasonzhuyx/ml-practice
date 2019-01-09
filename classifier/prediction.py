@@ -3,7 +3,7 @@ import scipy
 from PIL import Image
 from scipy import ndimage
 
-from classifier.math_ex import *
+from classifier.mathEx import *
 from classifier.utils import load_data
 
 np.random.seed(1)

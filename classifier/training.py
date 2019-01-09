@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from classifier.math_ex import *
+
+from classifier.mathEx import *
 from classifier.utils import load_data
 
 np.random.seed(1)
