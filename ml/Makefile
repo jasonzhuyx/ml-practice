@@ -1,4 +1,4 @@
-.PHONY clean clean-cache
+.PHONY: clean clean-cache
 
 PROJECT ?= ml
 

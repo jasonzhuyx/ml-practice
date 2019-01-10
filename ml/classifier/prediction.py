@@ -1,7 +1,7 @@
 """
 
 """
-import os
+
 import scipy
 from scipy import ndimage
 from matplotlib import pyplot as plt
@@ -9,7 +9,8 @@ from matplotlib import pyplot as plt
 from ml.classifier.mathEx import *
 from ml.classifier.utils import \
     load_data, \
-    load_parameters
+    load_parameters, \
+    print_pypath
 
 
 def predict(X, y, parameters):
@@ -76,4 +77,5 @@ def run():
 
 
 if __name__ == '__main__':
+    print_pypath()
     run()

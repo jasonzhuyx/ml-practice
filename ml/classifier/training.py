@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from ml.classifier.mathEx import *
 from ml.classifier.utils import \
     load_data, \
-    saved_parameters, \
+    save_parameters, \
     print_pypath
 
 
@@ -87,7 +87,7 @@ def run():
     parameters = L_layer_model(
         train_x, train_y, layers_dims, num_iterations=3000, print_cost=True)
     # print(type(parameters))
-    saved_parameters(parameters)
+    save_parameters(parameters)
 
 
 if __name__ == '__main__':

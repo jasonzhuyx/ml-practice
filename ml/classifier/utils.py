@@ -87,7 +87,7 @@ def print_pypath():
     print('.' * 80)
 
 
-def saved_parameters(parameters):
+def save_parameters(parameters):
     """
     """
     data_dir = os.path.dirname(os.path.realpath(__file__))
