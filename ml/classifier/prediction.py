@@ -52,7 +52,7 @@ def run():
     num_px = train_x_orig.shape[1]
     m_test = test_x_orig.shape[0]
     # Reshape the training and test examples
-    train_x_flatten = train_x_orig.reshape(train_x_orig.shape[0], -1).T  # The "-1" makes reshape flatten the remaining dimensions
+    train_x_flatten = train_x_orig.reshape(train_x_orig.shape[0], -1).T
     test_x_flatten = test_x_orig.reshape(test_x_orig.shape[0], -1).T
 
     # Standardize data to have feature values between 0 and 1.
@@ -63,7 +63,7 @@ def run():
     pred_train = predict(train_x, train_y, parameters)
     pred_test = predict(test_x, test_y, parameters)
 
-    my_image = "cat5.jpg"
+    my_image = "cat3.jpg"
     my_label_y = [1]
 
     fname = "images/" + my_image
@@ -73,7 +73,7 @@ def run():
     my_predicted_image = predict(my_image, my_label_y, parameters)
     plt.imshow(image)
     print ("y = " + str(np.squeeze(my_predicted_image)) + ", your L-layer model predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
-    plt.show(block=True)
+    plt.show(block=False)
 
 
 if __name__ == '__main__':
