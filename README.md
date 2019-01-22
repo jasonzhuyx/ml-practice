@@ -22,6 +22,14 @@
   ```
 
 
+### Dev Setup
+
+  Set up Python [venv](https://docs.python.org/3/library/venv.html) before running anything:
+
+  ```
+  make dev-setup
+  ```
+
 
 <br /><a name="start"></a>
 ## Start
